@@ -1,0 +1,137 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #111827;
+  color: #f9fafb;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+.container {
+  width: min(1100px, 92%);
+  margin: 0 auto;
+}
+
+.page {
+  padding: 40px 0;
+}
+
+.hero {
+  margin-bottom: 32px;
+}
+
+.hero h1 {
+  font-size: 42px;
+  margin: 0 0 8px;
+}
+
+.hero p {
+  color: #d1d5db;
+  margin: 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 380px 1fr;
+  gap: 24px;
+  align-items: start;
+}
+
+.card {
+  background: #1f2937;
+  border: 1px solid #374151;
+  border-radius: 18px;
+  padding: 24px;
+}
+
+.card h2 {
+  margin-top: 0;
+}
+
+.form {
+  display: grid;
+  gap: 16px;
+}
+
+.form label {
+  display: grid;
+  gap: 8px;
+  color: #e5e7eb;
+}
+
+.form input,
+.form select,
+.form textarea {
+  width: 100%;
+  border: 1px solid #4b5563;
+  background: #111827;
+  color: #f9fafb;
+  border-radius: 10px;
+  padding: 12px;
+}
+
+.form textarea {
+  min-height: 90px;
+  resize: vertical;
+}
+
+.form button {
+  border: none;
+  background: #f97316;
+  color: white;
+  border-radius: 10px;
+  padding: 12px 16px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.form button:hover {
+  background: #ea580c;
+}
+
+.error {
+  background: #7f1d1d;
+  color: #fecaca;
+  padding: 10px 12px;
+  border-radius: 10px;
+}
+
+.exercise-list {
+  display: grid;
+  gap: 16px;
+}
+
+.exercise-card {
+  background: #111827;
+  border: 1px solid #374151;
+  border-radius: 14px;
+  padding: 16px;
+}
+
+.exercise-card h3 {
+  margin: 0 0 10px;
+}
+
+.exercise-card p {
+  margin: 6px 0;
+  color: #d1d5db;
+}
+
+.exercise-card small {
+  color: #9ca3af;
+}
+
+@media (max-width: 800px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

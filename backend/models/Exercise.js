@@ -23,6 +23,7 @@ const exerciseSchema = new mongoose.Schema({
 },   
 {
     timestamps: true,
+    versionKey: false,
 });
 
 const Exercise = mongoose.model('Exercise', exerciseSchema);
